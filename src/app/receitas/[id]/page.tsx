@@ -1,3 +1,4 @@
+import InfoPill from "@/components/infoPill";
 import { recipes } from "@/lib/data";
 import { ChevronLeft } from "lucide-react";
 import Image from "next/image";
@@ -46,9 +47,11 @@ export default function ReceitaPage({ params }: RecipePageProps) {
                         </div>
 
                         {/* Infos de preparo */}
-                        <div>
-                            {/* TODO: componentes de info */}
-
+                        <div className="flex gap-4">
+                            <InfoPill title="Preparo" info={recipe.prepTime}/>
+                            <InfoPill title="Cozimento" info={recipe.cookTime}/>
+                            <InfoPill title="Porções" info={recipe.servings}/>
+                            <InfoPill title="Categoria" info={recipe.category}/>
                         </div>
 
                         {/* colunas */}
