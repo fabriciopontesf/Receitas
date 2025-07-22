@@ -1,7 +1,7 @@
 "use client"
 
 import RecipeCard from "@/components/RecipeCard";
-import RecipeFormModal from "@/components/RecipeFromModal";
+import RecipeFormModal from "@/components/RecipeFormModal";
 import { recipes } from "@/lib/data";
 import { Plus } from "lucide-react";
 import { useState } from "react";
